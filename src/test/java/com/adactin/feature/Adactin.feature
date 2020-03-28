@@ -21,7 +21,7 @@ Scenario Outline: User checking the login function using valid username and vali
     |PavithraN|Pavi@2426|
     
     
- 
+ @smokeTest
    Scenario: User checks the search function hotel
 	And User already logged in and is in booking page
 	When User selects the Location  in the location field
@@ -36,7 +36,7 @@ Scenario Outline: User checking the login function using valid username and vali
 	And User clicks on continue button
 	Then The user confirms the confirmation is successfull
 	
-	
+@SanityTest	
 	Scenario: User checks the booking function using valid credentials
 	And the page is already partially autopopulated and the rest dropdown to be filled
     When User enters the firstname "<PavithraN>" in the firstname field
