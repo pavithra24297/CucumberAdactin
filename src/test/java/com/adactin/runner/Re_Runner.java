@@ -1,6 +1,5 @@
 package com.adactin.runner;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 
 import org.junit.AfterClass;
@@ -10,25 +9,28 @@ import org.openqa.selenium.WebDriver;
 
 import com.adactin.helper.FileReaderManager;
 import com.adactinpom.org.BaseClass2;
+import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
 
 import cucumber.api.CucumberOptions;
-import cucumber.api.Plugin;
 import cucumber.api.junit.Cucumber;
 
-
 @RunWith(Cucumber.class)
+@ExtendedCucumberOptions(retryCount=4,
+                           jsonReport="REPORT/jsonReport.json")
 @CucumberOptions(features = "src\\test\\java\\com\\adactin\\feature", 
                  glue = "com\\adactin\\stepdefintion",
-                 plugin={"pretty","html:Report",
-                		 "com.cucumber.listener.ExtentCucumberFormatter:Report\\extentReport.html"},
-               		
+                 plugin= {"com.cucumber.listener.ExtentCucumberFormatter:Report\\extentReport.html",
+                		 "json:target/cucumber.json",
+                		 "html:normal.html",
+                		 "rerun:Report/Rerun.txt"
+                		 },
                  monochrome = true,
                  dryRun=false,
-                 strict=true,
-                 tags = {"@RegressionTest"}
+                 strict=true
                  )
 
-public class AdactinRunner {
+
+public class Re_Runner {
 	
 	public static  WebDriver driver;
 	
@@ -48,5 +50,6 @@ public class AdactinRunner {
 
 }
 	
-	
-			
+
+
+
