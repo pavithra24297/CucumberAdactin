@@ -17,12 +17,11 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @ExtendedCucumberOptions(retryCount=4,
                            jsonReport="REPORT/jsonReport.json")
-@CucumberOptions(features = "src\\test\\java\\com\\adactin\\feature", 
+@CucumberOptions(features = "@Report/FailedScenario.txt", 
                  glue = "com\\adactin\\stepdefintion",
-                 plugin= {"com.cucumber.listener.ExtentCucumberFormatter:Report\\extentReport.html",
+                 plugin= {"com.cucumber.listener.ExtentCucumberFormatter:Report/rerunReport.html",
                 		 "json:target/cucumber.json",
-                		 "html:normal.html",
-                		 "rerun:Report/Rerun.txt"
+                		 "html:normal.html"
                 		 },
                  monochrome = true,
                  dryRun=false,

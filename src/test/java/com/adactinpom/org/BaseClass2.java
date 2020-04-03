@@ -156,7 +156,6 @@ public class BaseClass2{
 	}
 
 	public static void dropDownSelection(WebElement element, String option, String input) {
-
 		Select s = new Select(element);
 
 		if (option.equals("index")) {
@@ -165,6 +164,8 @@ public class BaseClass2{
 
 		} else if (option.equals("value")) {
 			s.selectByValue(input);
+		} else if (option.equalsIgnoreCase("text")) {
+			s.selectByVisibleText(input);
 		}
 	}
 
@@ -174,11 +175,21 @@ public class BaseClass2{
 		ac.click();
 	}
 
-	public static void frame(String element) {
-
-		driver.switchTo().frame(element);
-
-	}
+	public static void frame(WebElement element, String option, String value) {
+		try {
+			if (option.equals("Index")) {
+				int x = Integer.parseInt(value);
+				driver.switchTo().frame(x);
+			}else if (option.equals("value")) {
+				driver.switchTo().frame(value);
+			}else {
+				driver.switchTo().frame(element);
+			}
+			
+		} catch (Exception e) {
+          e.printStackTrace();
+		}
+}
 
 	public static void windows(String element) {
 		try {

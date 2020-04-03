@@ -9,7 +9,7 @@ import java.util.Properties;
 public class ConfigurationReader {
 	public static Properties P;
 	public  ConfigurationReader() throws IOException {
-		File f = new File("C:\\Users\\admin\\eclipse-workspace\\CucumberAdactin\\src\\test\\java\\com\\adactin\\properties\\Configuration.properties");
+		File f = new File("C:\\Users\\admin\\eclipse-workspace\\AdactinCucumber\\src\\test\\java\\com\\adactin\\properties\\Configuration.properties");
 		FileInputStream fis = new FileInputStream(f);
 		P=new Properties();
 		P.load(fis);

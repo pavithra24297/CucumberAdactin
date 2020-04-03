@@ -43,10 +43,10 @@ Scenario Outline: User checking the login function using valid username and vali
 	And User enters the lastname "<lakshmi>" in the lastname field
 	And User enters the address "<No.5/3 Raman Avenue flats>" in the address field
 	And User enters the valid Credit card number "<2345678881234567>" field
-	And User selects the card type "<VISA>" in the cardtype field
-	And User selects the card expiry date "<cardexpirydate>" in date field
-	And User selects the card expiry year "<2>" in the year field
-	And User enters the valid Cvv number "<2020>" in the number field
+	And User selects the card type "<VISA>" in the cardtype  field
+	And User selects the card expiry month "<2>" in month field
+	And User selects the card expiry year "<2020>" in the year field
+	And User enters the valid Cvv number "<2426>" in the number field
 	And User clicks on book now button
 	And User clicks on logout button
 	Then User is logged out and is navigated back to login page 

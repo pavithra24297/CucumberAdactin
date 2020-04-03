@@ -17,15 +17,15 @@ import cucumber.api.junit.Cucumber;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src\\test\\java\\com\\adactin\\feature", 
+@CucumberOptions(features = "src\\test\\java\\com\\adactin\\feature\\Adactin.feature", 
                  glue = "com\\adactin\\stepdefintion",
                  plugin={"pretty","html:Report",
-                		 "com.cucumber.listener.ExtentCucumberFormatter:Report\\extentReport.html"},
+                		 "com.cucumber.listener.ExtentCucumberFormatter:Report/extentReport.html","rerun:Report/FailedScenario.txt"},
                		
                  monochrome = true,
                  dryRun=false,
-                 strict=true,
-                 tags = {"@RegressionTest"}
+                 strict=true
+                 //tags = {"@RegressionTest"}
                  )
 
 public class AdactinRunner {

@@ -11,7 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.BrowserType;
 
-import com.Automation.pom.LoginPage;
+
 import com.adactin.helper.FileReaderManager;
 import com.adactin.helper.PageObjectManager;
 import com.adactin.runner.AdactinRunner;
@@ -27,7 +27,7 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import sun.security.krb5.Realm;
+import junit.framework.Assert;
 
 public class StepDefintion extends BaseClass2  {
 	public static WebDriver driver=AdactinRunner.driver;
@@ -249,19 +249,17 @@ public class StepDefintion extends BaseClass2  {
 	     
 
 
-	@When("^User selects the card type \"([^\"]*)\" in the cardtype field$")
-	public void user_selects_the_card_type_in_the_cardtype_field(String arg1)   {
-		dropDownSelection(pom.getBp().getCtype(), "value","VISA" );
-		
+	@When("^User selects the card type \"([^\"]*)\" in the cardtype  field$")
+	public void user_selects_the_card_type_in_the_cardtype_field(String arg1)  {
+	    
+	    dropDownSelection(pom.getBp().getCtype(), "value", "VISA" );
 		//BookingPage BP = new BookingPage(driver);
 		//dropDownSelection(BP.getCtype(), "value", "VISA");
-	     
-	     
-	}
+	     }
 
-	@When("^User selects the card expiry date \"([^\"]*)\" in date field$")
-	public void user_selects_the_card_expiry_date_in_date_field(String arg1)   {
-		dropDownSelection(pom.getBp().getCmonth(), "value", "2");
+	@When("^User selects the card expiry month \"([^\"]*)\" in month field$")
+	public void user_selects_the_card_expiry_month_in_month_field(String arg1) {
+    	dropDownSelection(pom.getBp().getCmonth(), "value", "2");
 		
 		//BookingPage BP = new BookingPage(driver);
 		//dropDownSelection(BP.getCmonth(), "value", "2");
@@ -269,7 +267,7 @@ public class StepDefintion extends BaseClass2  {
 	}
 
 	@When("^User selects the card expiry year \"([^\"]*)\" in the year field$")
-	public void user_selects_the_card_expiry_year_in_the_year_field(String arg1)   {
+	public void user_selects_the_card_expiry_year_in_the_year_field(String arg1)  {
 		dropDownSelection(pom.getBp().getCyear(), "value", "2020");
 		
 		
@@ -280,7 +278,8 @@ public class StepDefintion extends BaseClass2  {
 	}
 
 	@When("^User enters the valid Cvv number \"([^\"]*)\" in the number field$")
-	public void user_enters_the_valid_Cvv_number_in_the_number_field(String arg1)   {
+	public void user_enters_the_valid_Cvv_number_in_the_number_field(String arg1)  {
+	    
 		skeys(pom.getBp().getCcnum(), "2426");
 		
 		//BookingPage BP = new BookingPage(driver); 
@@ -313,6 +312,7 @@ public class StepDefintion extends BaseClass2  {
 
 	@Then("^User is logged out and is navigated back to login page$")
 	public void user_is_logged_out_and_is_navigated_back_to_login_page()   {
+		Assert.assertEquals("", "   ");
 			}
 
 
