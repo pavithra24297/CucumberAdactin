@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 8899300,
+  "duration": 2195100,
   "status": "passed"
 });
 formatter.background({
@@ -31,14 +31,14 @@ formatter.match({
   "location": "StepDefintion.the_User_is_logged_in()"
 });
 formatter.result({
-  "duration": 478201600,
+  "duration": 1094742800,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefintion.goes_to_landing_page()"
 });
 formatter.result({
-  "duration": 38500,
+  "duration": 47700,
   "status": "passed"
 });
 formatter.scenario({
@@ -119,7 +119,7 @@ formatter.match({
   "location": "StepDefintion.the_page_is_already_partially_autopopulated_and_the_rest_dropdown_to_be_filled()"
 });
 formatter.result({
-  "duration": 33000,
+  "duration": 30300,
   "status": "passed"
 });
 formatter.match({
@@ -132,7 +132,7 @@ formatter.match({
   "location": "StepDefintion.user_enters_the_firstname_in_the_firstname_field(String)"
 });
 formatter.result({
-  "duration": 75785700,
+  "duration": 96652300,
   "status": "passed"
 });
 formatter.match({
@@ -145,7 +145,7 @@ formatter.match({
   "location": "StepDefintion.user_enters_the_lastname_in_the_lastname_field(String)"
 });
 formatter.result({
-  "duration": 1748200,
+  "duration": 2384700,
   "status": "passed"
 });
 formatter.match({
@@ -158,7 +158,7 @@ formatter.match({
   "location": "StepDefintion.user_enters_the_address_in_the_address_field(String)"
 });
 formatter.result({
-  "duration": 936500,
+  "duration": 1109400,
   "status": "passed"
 });
 formatter.match({
@@ -171,7 +171,7 @@ formatter.match({
   "location": "StepDefintion.user_enters_the_valid_Credit_card_number_field(String)"
 });
 formatter.result({
-  "duration": 1277500,
+  "duration": 1428200,
   "status": "passed"
 });
 formatter.match({
@@ -184,7 +184,7 @@ formatter.match({
   "location": "StepDefintion.user_selects_the_card_type_in_the_cardtype_field(String)"
 });
 formatter.result({
-  "duration": 15752800,
+  "duration": 4226900,
   "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy21.getTagName(Unknown Source)\r\n\tat org.openqa.selenium.support.ui.Select.\u003cinit\u003e(Select.java:45)\r\n\tat com.adactinpom.org.BaseClass2.dropDownSelection(BaseClass2.java:159)\r\n\tat com.adactin.stepdefintion.StepDefintion.user_selects_the_card_type_in_the_cardtype_field(StepDefintion.java:255)\r\n\tat ✽.And User selects the card type \"\u003cVISA\u003e\" in the cardtype  field(src/test/java/com/adactin/feature/Adactin.feature:46)\r\n",
   "status": "failed"
 });
@@ -243,7 +243,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 220700,
+  "duration": 231400,
   "status": "passed"
 });
 });

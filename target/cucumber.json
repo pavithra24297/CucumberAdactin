@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 478201600,
+              "duration": 1094742800,
               "status": "passed"
             },
             "line": 4,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 38500,
+              "duration": 47700,
               "status": "passed"
             },
             "line": 5,
@@ -39,7 +39,7 @@
         "before": [
           {
             "result": {
-              "duration": 8899300,
+              "duration": 2195100,
               "status": "passed"
             },
             "match": {
@@ -54,7 +54,7 @@
         "after": [
           {
             "result": {
-              "duration": 220700,
+              "duration": 231400,
               "status": "passed"
             },
             "match": {
@@ -67,7 +67,7 @@
         "steps": [
           {
             "result": {
-              "duration": 33000,
+              "duration": 30300,
               "status": "passed"
             },
             "line": 41,
@@ -79,7 +79,7 @@
           },
           {
             "result": {
-              "duration": 75785700,
+              "duration": 96652300,
               "status": "passed"
             },
             "line": 42,
@@ -97,7 +97,7 @@
           },
           {
             "result": {
-              "duration": 1748200,
+              "duration": 2384700,
               "status": "passed"
             },
             "line": 43,
@@ -115,7 +115,7 @@
           },
           {
             "result": {
-              "duration": 936500,
+              "duration": 1109400,
               "status": "passed"
             },
             "line": 44,
@@ -133,7 +133,7 @@
           },
           {
             "result": {
-              "duration": 1277500,
+              "duration": 1428200,
               "status": "passed"
             },
             "line": 45,
@@ -151,7 +151,7 @@
           },
           {
             "result": {
-              "duration": 15752800,
+              "duration": 4226900,
               "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy21.getTagName(Unknown Source)\r\n\tat org.openqa.selenium.support.ui.Select.\u003cinit\u003e(Select.java:45)\r\n\tat com.adactinpom.org.BaseClass2.dropDownSelection(BaseClass2.java:159)\r\n\tat com.adactin.stepdefintion.StepDefintion.user_selects_the_card_type_in_the_cardtype_field(StepDefintion.java:255)\r\n\tat ✽.And User selects the card type \"\u003cVISA\u003e\" in the cardtype  field(src/test/java/com/adactin/feature/Adactin.feature:46)\r\n",
               "status": "failed"
             },
